@@ -1,0 +1,78 @@
+CHANGES IN VERSION 0.99.18
+--------------------------
+
+BUG FIXES
+
+    o Fixed a problem in processing GTF files without header information.
+
+    o Fixed a bug failing to throw an error if not all required feature types are
+      available in the GTF.
+
+
+
+CHANGES IN VERSION 0.99.17
+--------------------------
+
+NEW FEATURES
+
+    o Added new function ensDbFromGRanges that builds an EnsDB database from information
+      provided in a GRanges object (e.g. retrieved from the AnnotationHub).
+
+
+
+CHANGES IN VERSION 0.99.16
+--------------------------
+
+SIGNIFICANT USER-VISIBLE CHANGES
+
+    o Added argument outfile to ensDbFromGtf that allows to manually specify the file
+      name of the database file.
+
+    o ensDbFromGtf tries now to automatically fetch the sequence lengths from Ensembl.
+
+
+BUG FIXES
+
+    o Fixed the function that extracts the genome build version from the gtf file name.
+
+
+
+CHANGES IN VERSION 0.99.15
+--------------------------
+
+NEW FEATURES
+
+    o metadata method to extract the information from the metadata database table.
+
+    o ensDbFromGtf function to generate a EnsDb SQLite file from an (Ensembl)
+      GTF file.
+
+
+
+CHANGES IN VERSION 0.99.14
+--------------------------
+
+BUG FIXES
+
+    o Fixed a problem when reading tables fetched from Ensembl that contained ' or #.
+
+
+
+CHANGES IN VERSION 0.99.13
+--------------------------
+
+SIGNIFICANT USER-VISIBLE CHANGES
+
+    o Added argument "port" to the fetchTablesFromEnsembl to allow specifying the MySQL port
+      of the database.
+
+
+
+CHANGES IN VERSION 0.99.12
+--------------------------
+
+BUG FIXES
+
+    o argument "x" for method organism changed to "object".
+
+
